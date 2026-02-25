@@ -308,6 +308,22 @@ describe('Moment Business Days', function () {
 
   describe('.businessDiff', function () {
     afterEach(resetLocale);
+
+    it('should calculate number of business days between dates between Monday and Friday as 4', function () {
+      var diff =moment("2021-04-05").businessDiff(moment("2021-04-09"));
+      expect(diff).to.eql(4);
+    });
+
+    it('should calculate number of business days between dates between Monday and Saturday as 4', function () {
+      var diff =moment("2021-04-05").businessDiff(moment("2021-04-10"));
+      expect(diff).to.eql(4);
+    });
+
+    it('should calculate number of business days between dates between Monday and Sunday as 4', function () {
+      var diff =moment("2021-04-05").businessDiff(moment("2021-04-11"));
+      expect(diff).to.eql(4);
+    });
+
     it('should calculate number of business days between dates', function () {
       var diff = moment('2017-05-15').businessDiff(moment('2017-05-08'));
       expect(diff).to.eql(5);

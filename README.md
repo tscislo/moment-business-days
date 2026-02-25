@@ -1,4 +1,11 @@
-# moment-business-days
+# @mobilenext/moment-business-days
+
+## It is a fork of [moment-business-days](https://www.npmjs.com/package/moment-business-days)
+
+It resolves some issues that the original package has, and also adds some features. The original package is no longer maintained, so I decided to fork it and maintain it myself.
+
+
+## Original README
 
 <a href="https://github.com/kalmecak/moment-business-days/actions" target="_blank">
   <img alt="Version" src="https://github.com/kalmecak/moment-business-days/workflows/Continuous%20Integration/badge.svg?branch=master">

@@ -32,4 +32,4 @@ declare module 'moment' {
     }
 }
 
-export = moment;
+export default moment;
